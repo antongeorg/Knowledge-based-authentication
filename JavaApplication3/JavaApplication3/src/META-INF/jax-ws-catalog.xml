@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Project_Diktiakos/login?wsdl" uri="wsdl/localhost_8080/Project_Diktiakos/login.wsdl"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/login?xsd=1" uri="wsdl/localhost_8080/Project_Diktiakos/login.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/ipopsifiows?wsdl" uri="wsdl/localhost_8080/Project_Diktiakos/ipopsifiows.wsdl"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/ipopsifiows?xsd=1" uri="wsdl/localhost_8080/Project_Diktiakos/ipopsifiows.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/pistopoisi_exestikou_kentrou_ws?wsdl" uri="wsdl/localhost_8080/Project_Diktiakos/pistopoisi_exestikou_kentrou_ws.wsdl"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/pistopoisi_exestikou_kentrou_ws?xsd=1" uri="wsdl/localhost_8080/Project_Diktiakos/pistopoisi_exestikou_kentrou_ws.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/egkrisi_ipopsifios_app_ws?wsdl" uri="wsdl/localhost_8080/Project_Diktiakos/egkrisi_ipopsifios_app_ws.wsdl"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/egkrisi_ipopsifios_app_ws?xsd=1" uri="wsdl/localhost_8080/Project_Diktiakos/egkrisi_ipopsifios_app_ws.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/ekrisi_ipospidiou_app_ws?wsdl" uri="wsdl/localhost_8080/Project_Diktiakos/ekrisi_ipospidiou_app_ws.wsdl"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/ekrisi_ipospidiou_app_ws?xsd=1" uri="wsdl/localhost_8080/Project_Diktiakos/ekrisi_ipospidiou_app_ws.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/egkrisi_diaxiristi_kentrou_ws?wsdl" uri="wsdl/localhost_8080/Project_Diktiakos/egkrisi_diaxiristi_kentrou_ws.wsdl"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/egkrisi_diaxiristi_kentrou_ws?xsd=1" uri="wsdl/localhost_8080/Project_Diktiakos/egkrisi_diaxiristi_kentrou_ws.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/egkrisi_ipospifiou_app?wsdl" uri="wsdl/localhost_8080/Project_Diktiakos/egkrisi_ipospifiou_app.wsdl"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/egkrisi_ipospifiou_app?xsd=1" uri="wsdl/localhost_8080/Project_Diktiakos/egkrisi_ipospifiou_app.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/exetastikokedrows?wsdl" uri="wsdl/localhost_8080/Project_Diktiakos/exetastikokedrows.wsdl"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/exetastikokedrows?xsd=1" uri="wsdl/localhost_8080/Project_Diktiakos/exetastikokedrows.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/isagogi_stixio_ws?wsdl" uri="wsdl/localhost_8080/Project_Diktiakos/isagogi_stixio_ws.wsdl"/>
+    <system systemId="http://localhost:8080/Project_Diktiakos/isagogi_stixio_ws?xsd=1" uri="wsdl/localhost_8080/Project_Diktiakos/isagogi_stixio_ws.xsd_1.xsd"/>
+</catalog>

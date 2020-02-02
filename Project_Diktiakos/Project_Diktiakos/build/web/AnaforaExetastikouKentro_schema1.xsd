@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://loginwebservices/" xmlns:tns="http://loginwebservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="anafora_exetastiko_kentro" type="tns:anafora_exetastiko_kentro"/>
+
+  <xs:element name="anafora_exetastiko_kentroResponse" type="tns:anafora_exetastiko_kentroResponse"/>
+
+  <xs:element name="getList_lastName" type="tns:getList_lastName"/>
+
+  <xs:element name="getList_lastNameResponse" type="tns:getList_lastNameResponse"/>
+
+  <xs:element name="getList_name" type="tns:getList_name"/>
+
+  <xs:element name="getList_nameResponse" type="tns:getList_nameResponse"/>
+
+  <xs:element name="getList_sum" type="tns:getList_sum"/>
+
+  <xs:element name="getList_sumResponse" type="tns:getList_sumResponse"/>
+
+  <xs:complexType name="anafora_exetastiko_kentro">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="anafora_exetastiko_kentroResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getList_name">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getList_nameResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getList_lastName">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getList_lastNameResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getList_sum">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getList_sumResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://loginwebservices/" xmlns:tns="http://loginwebservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="pistopoisi_exetastikou_kentrou" type="tns:pistopoisi_exetastikou_kentrou"/>
+
+  <xs:element name="pistopoisi_exetastikou_kentrouResponse" type="tns:pistopoisi_exetastikou_kentrouResponse"/>
+
+  <xs:element name="showCount2" type="tns:showCount2"/>
+
+  <xs:element name="showCount2Response" type="tns:showCount2Response"/>
+
+  <xs:complexType name="pistopoisi_exetastikou_kentrou">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg1" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg2" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg3" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="pistopoisi_exetastikou_kentrouResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="showCount2">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="showCount2Response">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

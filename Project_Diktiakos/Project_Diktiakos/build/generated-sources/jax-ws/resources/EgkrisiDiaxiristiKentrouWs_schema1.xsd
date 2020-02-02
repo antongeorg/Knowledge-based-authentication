@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://loginwebservices/" xmlns:tns="http://loginwebservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="egkrisi_diaxiristi_kentrou" type="tns:egkrisi_diaxiristi_kentrou"/>
+
+  <xs:element name="egkrisi_diaxiristi_kentrouResponse" type="tns:egkrisi_diaxiristi_kentrouResponse"/>
+
+  <xs:complexType name="egkrisi_diaxiristi_kentrou">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="egkrisi_diaxiristi_kentrouResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

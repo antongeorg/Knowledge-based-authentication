@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-login" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/login"/>
+        <property name="wsdl-login" location="xml-resources/web-service-references/login/wsdl/localhost_8080/Project_Diktiakos/login.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/login" destdir="${build.generated.dir}/jax-wsCache/login" wsdl="${wsdl-login}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/login?wsdl" xnocompile="true" xendorsed="true" package="java_login">
+            <depends file="${wsdl-login}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/login"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/login">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-login" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/login"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/java_login"/>
+    </target>
+    <target name="wsimport-client-ipopsifiows" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ipopsifiows"/>
+        <property name="wsdl-ipopsifiows" location="xml-resources/web-service-references/ipopsifiows/wsdl/localhost_8080/Project_Diktiakos/ipopsifiows.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ipopsifiows" destdir="${build.generated.dir}/jax-wsCache/ipopsifiows" wsdl="${wsdl-ipopsifiows}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/ipopsifiows?wsdl" xnocompile="true" xendorsed="true" package="java1">
+            <depends file="${wsdl-ipopsifiows}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ipopsifiows"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ipopsifiows">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ipopsifiows" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ipopsifiows"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/java1"/>
+    </target>
+    <target name="wsimport-client-pistopoisi_exestikou_kentrou_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws"/>
+        <property name="wsdl-pistopoisi_exestikou_kentrou_ws" location="xml-resources/web-service-references/pistopoisi_exestikou_kentrou_ws/wsdl/localhost_8080/Project_Diktiakos/pistopoisi_exestikou_kentrou_ws.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws" destdir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws" wsdl="${wsdl-pistopoisi_exestikou_kentrou_ws}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/pistopoisi_exestikou_kentrou_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-pistopoisi_exestikou_kentrou_ws}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-pistopoisi_exestikou_kentrou_ws" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+    </target>
+    <target name="wsimport-client-egkrisi_diaxiristi_kentrou_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws"/>
+        <property name="wsdl-egkrisi_diaxiristi_kentrou_ws" location="xml-resources/web-service-references/egkrisi_diaxiristi_kentrou_ws/wsdl/localhost_8080/Project_Diktiakos/egkrisi_diaxiristi_kentrou_ws.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws" destdir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws" wsdl="${wsdl-egkrisi_diaxiristi_kentrou_ws}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/egkrisi_diaxiristi_kentrou_ws?wsdl" xnocompile="true" xendorsed="true" package="java6">
+            <depends file="${wsdl-egkrisi_diaxiristi_kentrou_ws}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-egkrisi_diaxiristi_kentrou_ws" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/java6"/>
+    </target>
+    <target name="wsimport-client-ekrisi_ipospidiou_app_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws"/>
+        <property name="wsdl-ekrisi_ipospidiou_app_ws" location="xml-resources/web-service-references/ekrisi_ipospidiou_app_ws/wsdl/localhost_8080/Project_Diktiakos/ekrisi_ipospidiou_app_ws.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws" destdir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws" wsdl="${wsdl-ekrisi_ipospidiou_app_ws}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/ekrisi_ipospidiou_app_ws?wsdl" xnocompile="true" xendorsed="true" package="java7">
+            <depends file="${wsdl-ekrisi_ipospidiou_app_ws}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ekrisi_ipospidiou_app_ws" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/java7"/>
+    </target>
+    <target name="wsimport-client-egkrisi_ipospifiou_app" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app"/>
+        <property name="wsdl-egkrisi_ipospifiou_app" location="xml-resources/web-service-references/egkrisi_ipospifiou_app/wsdl/localhost_8080/Project_Diktiakos/egkrisi_ipospifiou_app.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app" destdir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app" wsdl="${wsdl-egkrisi_ipospifiou_app}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/egkrisi_ipospifiou_app?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-egkrisi_ipospifiou_app}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-egkrisi_ipospifiou_app" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+    </target>
+    <target name="wsimport-client-exetastikokedrows" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/exetastikokedrows"/>
+        <property name="wsdl-exetastikokedrows" location="xml-resources/web-service-references/exetastikokedrows/wsdl/localhost_8080/Project_Diktiakos/exetastikokedrows.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/exetastikokedrows" destdir="${build.generated.dir}/jax-wsCache/exetastikokedrows" wsdl="${wsdl-exetastikokedrows}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/exetastikokedrows?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-exetastikokedrows}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/exetastikokedrows"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/exetastikokedrows">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-exetastikokedrows" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/exetastikokedrows"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+    </target>
+    <target name="wsimport-client-isagogi_stixio_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws"/>
+        <property name="wsdl-isagogi_stixio_ws" location="xml-resources/web-service-references/isagogi_stixio_ws/wsdl/localhost_8080/Project_Diktiakos/isagogi_stixio_ws.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws" destdir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws" wsdl="${wsdl-isagogi_stixio_ws}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/isagogi_stixio_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-isagogi_stixio_ws}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-isagogi_stixio_ws" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-login, wsimport-client-ipopsifiows, wsimport-client-pistopoisi_exestikou_kentrou_ws, wsimport-client-egkrisi_diaxiristi_kentrou_ws, wsimport-client-ekrisi_ipospidiou_app_ws, wsimport-client-egkrisi_ipospifiou_app, wsimport-client-exetastikokedrows, wsimport-client-isagogi_stixio_ws"/>
+</project>

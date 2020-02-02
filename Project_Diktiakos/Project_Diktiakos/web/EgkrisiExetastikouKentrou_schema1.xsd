@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://loginwebservices/" xmlns:tns="http://loginwebservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="epistrofi_exetasatikou_kentrou" type="tns:epistrofi_exetasatikou_kentrou"/>
+
+  <xs:element name="epistrofi_exetasatikou_kentrouResponse" type="tns:epistrofi_exetasatikou_kentrouResponse"/>
+
+  <xs:complexType name="epistrofi_exetasatikou_kentrou">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="epistrofi_exetasatikou_kentrouResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

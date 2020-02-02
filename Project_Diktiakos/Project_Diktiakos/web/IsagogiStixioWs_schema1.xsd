@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://loginwebservices/" xmlns:tns="http://loginwebservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Count_stixia" type="tns:Count_stixia"/>
+
+  <xs:element name="Count_stixiaResponse" type="tns:Count_stixiaResponse"/>
+
+  <xs:element name="insert_stixia" type="tns:insert_stixia"/>
+
+  <xs:element name="insert_stixiaResponse" type="tns:insert_stixiaResponse"/>
+
+  <xs:complexType name="Count_stixia">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="Count_stixiaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insert_stixia">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+      <xs:element name="arg1" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insert_stixiaResponse">
+    <xs:sequence/>
+  </xs:complexType>
+</xs:schema>
+

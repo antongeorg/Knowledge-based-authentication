@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://loginwebservices/" xmlns:tns="http://loginwebservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="arxikopoisi_themata" type="tns:arxikopoisi_themata"/>
+
+  <xs:element name="arxikopoisi_themataResponse" type="tns:arxikopoisi_themataResponse"/>
+
+  <xs:element name="get_choice1" type="tns:get_choice1"/>
+
+  <xs:element name="get_choice1Response" type="tns:get_choice1Response"/>
+
+  <xs:element name="get_choice2" type="tns:get_choice2"/>
+
+  <xs:element name="get_choice2Response" type="tns:get_choice2Response"/>
+
+  <xs:element name="get_choice3" type="tns:get_choice3"/>
+
+  <xs:element name="get_choice3Response" type="tns:get_choice3Response"/>
+
+  <xs:element name="get_choice4" type="tns:get_choice4"/>
+
+  <xs:element name="get_choice4Response" type="tns:get_choice4Response"/>
+
+  <xs:element name="get_erwtisi" type="tns:get_erwtisi"/>
+
+  <xs:element name="get_erwtisiResponse" type="tns:get_erwtisiResponse"/>
+
+  <xs:element name="get_number_code" type="tns:get_number_code"/>
+
+  <xs:element name="get_number_codeResponse" type="tns:get_number_codeResponse"/>
+
+  <xs:element name="random_erwtisi" type="tns:random_erwtisi"/>
+
+  <xs:element name="random_erwtisiResponse" type="tns:random_erwtisiResponse"/>
+
+  <xs:element name="themata_random" type="tns:themata_random"/>
+
+  <xs:element name="themata_randomResponse" type="tns:themata_randomResponse"/>
+
+  <xs:complexType name="arxikopoisi_themata">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="arxikopoisi_themataResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="get_choice3">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="get_choice3Response">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="get_choice2">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="get_choice2Response">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="get_choice4">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="get_choice4Response">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="random_erwtisi">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="random_erwtisiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="get_choice1">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="get_choice1Response">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="themata_random">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="themata_randomResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="get_number_code">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="get_number_codeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="get_erwtisi">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="get_erwtisiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

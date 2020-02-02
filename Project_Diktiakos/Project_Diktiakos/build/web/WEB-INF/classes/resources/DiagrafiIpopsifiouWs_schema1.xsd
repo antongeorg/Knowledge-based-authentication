@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://loginwebservices/" xmlns:tns="http://loginwebservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="diagrafi_ipopsifiou" type="tns:diagrafi_ipopsifiou"/>
+
+  <xs:element name="diagrafi_ipopsifiouResponse" type="tns:diagrafi_ipopsifiouResponse"/>
+
+  <xs:element name="getCount_diagrafi_ipopsifiou" type="tns:getCount_diagrafi_ipopsifiou"/>
+
+  <xs:element name="getCount_diagrafi_ipopsifiouResponse" type="tns:getCount_diagrafi_ipopsifiouResponse"/>
+
+  <xs:complexType name="diagrafi_ipopsifiou">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="diagrafi_ipopsifiouResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getCount_diagrafi_ipopsifiou">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getCount_diagrafi_ipopsifiouResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

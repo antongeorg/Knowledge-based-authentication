@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://loginwebservices/" xmlns:tns="http://loginwebservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="showCount_up_ipopsifios" type="tns:showCount_up_ipopsifios"/>
+
+  <xs:element name="showCount_up_ipopsifiosResponse" type="tns:showCount_up_ipopsifiosResponse"/>
+
+  <xs:element name="up_ipopsifios" type="tns:up_ipopsifios"/>
+
+  <xs:element name="up_ipopsifiosResponse" type="tns:up_ipopsifiosResponse"/>
+
+  <xs:complexType name="up_ipopsifios">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="up_ipopsifiosResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="showCount_up_ipopsifios">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="showCount_up_ipopsifiosResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

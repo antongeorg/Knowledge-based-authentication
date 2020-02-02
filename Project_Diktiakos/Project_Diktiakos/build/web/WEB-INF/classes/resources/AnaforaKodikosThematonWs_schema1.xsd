@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://loginwebservices/" xmlns:tns="http://loginwebservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="anafora_kodikos_thematon" type="tns:anafora_kodikos_thematon"/>
+
+  <xs:element name="anafora_kodikos_thematonResponse" type="tns:anafora_kodikos_thematonResponse"/>
+
+  <xs:complexType name="anafora_kodikos_thematon">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="anafora_kodikos_thematonResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <target name="wsgen-init" depends="init, -do-compile">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws/resources/"/>
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.classes.dir}/META-INF"/>
+        <property name="j2ee.platform.wsgen.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsgen" classname="com.sun.tools.ws.ant.WsGen">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsgen-exetastikokedrows" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.exetastikokedrows.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.exetastikokedrows" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-login" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.login.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.login" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-isagogi_stixio_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.isagogi_stixio_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.isagogi_stixio_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-ipopsifiows" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.ipopsifiows.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.ipopsifiows" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-pistopoisi_exestikou_kentrou_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.pistopoisi_exestikou_kentrou_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.pistopoisi_exestikou_kentrou_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-themata_wc" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.themata_wc.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.themata_wc" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-up_ipopsifios_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.up_ipopsifios_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.up_ipopsifios_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-diagrafi_ipopsifiou_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.diagrafi_ipopsifiou_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.diagrafi_ipopsifiou_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-diagrafi_thematon_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.diagrafi_thematon_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.diagrafi_thematon_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-anafora_exetastikou_kentro" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.anafora_exetastikou_kentro.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.anafora_exetastikou_kentro" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-anafora_kodikos_exetasis_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.anafora_kodikos_exetasis_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.anafora_kodikos_exetasis_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-anafora_kodikos_thematon_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.anafora_kodikos_thematon_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.anafora_kodikos_thematon_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-egkrisi_ipopsifiou_wc" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.egkrisi_ipopsifiou_wc.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.egkrisi_ipopsifiou_wc" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-ipopsifios_login_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.ipopsifios_login_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.ipopsifios_login_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-start_themata" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.start_themata.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.start_themata" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-final_apotelesmata_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.final_apotelesmata_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.final_apotelesmata_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-pistopoisi_xristi_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.pistopoisi_xristi_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.pistopoisi_xristi_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-teliki_epistrofi" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.teliki_epistrofi.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.teliki_epistrofi" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-next_themta_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.next_themta_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.next_themta_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-egkrisi_diaxiristi_kentrou_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.egkrisi_diaxiristi_kentrou_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.egkrisi_diaxiristi_kentrou_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-login_exetastikou_ketrou_ws" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.login_exetastikou_ketrou_ws.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.login_exetastikou_ketrou_ws" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-egkrisi_exetastikou_kentrou" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.egkrisi_exetastikou_kentrou.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.egkrisi_exetastikou_kentrou" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <target name="wsgen-egkrisi_ipospifiou_app" depends="wsgen-init">
+        <copy todir="${build.classes.dir}/META-INF">
+            <fileset dir="${webinf.dir}" includes="wsit-loginwebservices.egkrisi_ipospifiou_app.xml"/>
+        </copy>
+        <wsgen sourcedestdir="${build.generated.sources.dir}/jax-ws" resourcedestdir="${build.generated.sources.dir}/jax-ws/resources/" destdir="${build.generated.sources.dir}/jax-ws" verbose="true" keep="true" genwsdl="true" sei="loginwebservices.egkrisi_ipospifiou_app" xendorsed="true">
+            <classpath path="${java.home}/../lib/tools.jar:${build.classes.dir}:${j2ee.platform.wsgen.classpath}:${javac.classpath}"/>
+        </wsgen>
+    </target>
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-login" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/login"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/login" destdir="${build.generated.dir}/jax-wsCache/login" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/login/wsdl/localhost_8080/Project_Diktiakos/login.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/login?wsdl" xnocompile="true" xendorsed="true" package="loginwc">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/login/wsdl/localhost_8080/Project_Diktiakos/login.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/login"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/login">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-login" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwc"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/login"/>
+    </target>
+    <target name="wsimport-client-ipopsifiows" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ipopsifiows"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ipopsifiows" destdir="${build.generated.dir}/jax-wsCache/ipopsifiows" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/ipopsifiows/wsdl/localhost_8080/Project_Diktiakos/ipopsifiows.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/ipopsifiows?wsdl" xnocompile="true" xendorsed="true" package="ipopsifiowc">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/ipopsifiows/wsdl/localhost_8080/Project_Diktiakos/ipopsifiows.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ipopsifiows"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ipopsifiows">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ipopsifiows" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ipopsifiowc"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/ipopsifiows"/>
+    </target>
+    <target name="wsimport-client-exetastikokedrows" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/exetastikokedrows"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/exetastikokedrows" destdir="${build.generated.dir}/jax-wsCache/exetastikokedrows" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/exetastikokedrows/wsdl/localhost_8080/Project_Diktiakos/exetastikokedrows.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/exetastikokedrows?wsdl" xnocompile="true" xendorsed="true" package="exetastikowc">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/exetastikokedrows/wsdl/localhost_8080/Project_Diktiakos/exetastikokedrows.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/exetastikokedrows"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/exetastikokedrows">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-exetastikokedrows" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/exetastikowc"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/exetastikokedrows"/>
+    </target>
+    <target name="wsimport-client-isagogi_stixio_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws" destdir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/isagogi_stixio_ws/wsdl/localhost_8080/Project_Diktiakos/isagogi_stixio_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/isagogi_stixio_ws?wsdl" xnocompile="true" xendorsed="true" package="stixia_wc">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/isagogi_stixio_ws/wsdl/localhost_8080/Project_Diktiakos/isagogi_stixio_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-isagogi_stixio_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/stixia_wc"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/isagogi_stixio_ws"/>
+    </target>
+    <target name="wsimport-client-pistopoisi_exestikou_kentrou_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws" destdir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/pistopoisi_exestikou_kentrou_ws/wsdl/localhost_8080/Project_Diktiakos/pistopoisi_exestikou_kentrou_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/pistopoisi_exestikou_kentrou_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/pistopoisi_exestikou_kentrou_ws/wsdl/localhost_8080/Project_Diktiakos/pistopoisi_exestikou_kentrou_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-pistopoisi_exestikou_kentrou_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/pistopoisi_exestikou_kentrou_ws"/>
+    </target>
+    <target name="wsimport-client-themata_wc" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/themata_wc"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/themata_wc" destdir="${build.generated.dir}/jax-wsCache/themata_wc" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/themata_wc/wsdl/localhost_8080/Project_Diktiakos/themata_wc.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/themata_wc?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/themata_wc/wsdl/localhost_8080/Project_Diktiakos/themata_wc.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/themata_wc"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/themata_wc">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-themata_wc" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/themata_wc"/>
+    </target>
+    <target name="wsimport-client-up_ipopsifios_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/up_ipopsifios_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/up_ipopsifios_ws" destdir="${build.generated.dir}/jax-wsCache/up_ipopsifios_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/up_ipopsifios_ws/wsdl/localhost_8080/Project_Diktiakos/up_ipopsifios_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/up_ipopsifios_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/up_ipopsifios_ws/wsdl/localhost_8080/Project_Diktiakos/up_ipopsifios_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/up_ipopsifios_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/up_ipopsifios_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-up_ipopsifios_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/up_ipopsifios_ws"/>
+    </target>
+    <target name="wsimport-client-diagrafi_ipopsifiou_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/diagrafi_ipopsifiou_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/diagrafi_ipopsifiou_ws" destdir="${build.generated.dir}/jax-wsCache/diagrafi_ipopsifiou_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/diagrafi_ipopsifiou_ws/wsdl/localhost_8080/Project_Diktiakos/diagrafi_ipopsifiou_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/diagrafi_ipopsifiou_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/diagrafi_ipopsifiou_ws/wsdl/localhost_8080/Project_Diktiakos/diagrafi_ipopsifiou_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/diagrafi_ipopsifiou_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/diagrafi_ipopsifiou_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-diagrafi_ipopsifiou_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/diagrafi_ipopsifiou_ws"/>
+    </target>
+    <target name="wsimport-client-diagrafi_thematon_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/diagrafi_thematon_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/diagrafi_thematon_ws" destdir="${build.generated.dir}/jax-wsCache/diagrafi_thematon_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/diagrafi_thematon_ws/wsdl/localhost_8080/Project_Diktiakos/diagrafi_thematon_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/diagrafi_thematon_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/diagrafi_thematon_ws/wsdl/localhost_8080/Project_Diktiakos/diagrafi_thematon_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/diagrafi_thematon_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/diagrafi_thematon_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-diagrafi_thematon_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/diagrafi_thematon_ws"/>
+    </target>
+    <target name="wsimport-client-anafora_exetastikou_kentro" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/anafora_exetastikou_kentro"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/anafora_exetastikou_kentro" destdir="${build.generated.dir}/jax-wsCache/anafora_exetastikou_kentro" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/anafora_exetastikou_kentro/wsdl/localhost_8080/Project_Diktiakos/anafora_exetastikou_kentro.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/anafora_exetastikou_kentro?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/anafora_exetastikou_kentro/wsdl/localhost_8080/Project_Diktiakos/anafora_exetastikou_kentro.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/anafora_exetastikou_kentro"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/anafora_exetastikou_kentro">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-anafora_exetastikou_kentro" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/anafora_exetastikou_kentro"/>
+    </target>
+    <target name="wsimport-client-anafora_kodikos_exetasis_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/anafora_kodikos_exetasis_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/anafora_kodikos_exetasis_ws" destdir="${build.generated.dir}/jax-wsCache/anafora_kodikos_exetasis_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/anafora_kodikos_exetasis_ws/wsdl/localhost_8080/Project_Diktiakos/anafora_kodikos_exetasis_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/anafora_kodikos_exetasis_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/anafora_kodikos_exetasis_ws/wsdl/localhost_8080/Project_Diktiakos/anafora_kodikos_exetasis_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/anafora_kodikos_exetasis_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/anafora_kodikos_exetasis_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-anafora_kodikos_exetasis_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/anafora_kodikos_exetasis_ws"/>
+    </target>
+    <target name="wsimport-client-anafora_kodikos_thematon_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/anafora_kodikos_thematon_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/anafora_kodikos_thematon_ws" destdir="${build.generated.dir}/jax-wsCache/anafora_kodikos_thematon_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/anafora_kodikos_thematon_ws/wsdl/localhost_8080/Project_Diktiakos/anafora_kodikos_thematon_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/anafora_kodikos_thematon_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/anafora_kodikos_thematon_ws/wsdl/localhost_8080/Project_Diktiakos/anafora_kodikos_thematon_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/anafora_kodikos_thematon_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/anafora_kodikos_thematon_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-anafora_kodikos_thematon_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/anafora_kodikos_thematon_ws"/>
+    </target>
+    <target name="wsimport-client-egkrisi_ipopsifiou_wc" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/egkrisi_ipopsifiou_wc"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/egkrisi_ipopsifiou_wc" destdir="${build.generated.dir}/jax-wsCache/egkrisi_ipopsifiou_wc" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/egkrisi_ipopsifiou_wc/wsdl/localhost_8080/Project_Diktiakos/egkrisi_ipopsifiou_wc.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/egkrisi_ipopsifiou_wc?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/egkrisi_ipopsifiou_wc/wsdl/localhost_8080/Project_Diktiakos/egkrisi_ipopsifiou_wc.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/egkrisi_ipopsifiou_wc"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/egkrisi_ipopsifiou_wc">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-egkrisi_ipopsifiou_wc" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/egkrisi_ipopsifiou_wc"/>
+    </target>
+    <target name="wsimport-client-ipopsifios_login_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ipopsifios_login_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ipopsifios_login_ws" destdir="${build.generated.dir}/jax-wsCache/ipopsifios_login_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/ipopsifios_login_ws/wsdl/localhost_8080/Project_Diktiakos/ipopsifios_login_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/ipopsifios_login_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/ipopsifios_login_ws/wsdl/localhost_8080/Project_Diktiakos/ipopsifios_login_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ipopsifios_login_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ipopsifios_login_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ipopsifios_login_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/ipopsifios_login_ws"/>
+    </target>
+    <target name="wsimport-client-start_themata" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/start_themata"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/start_themata" destdir="${build.generated.dir}/jax-wsCache/start_themata" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/start_themata/wsdl/localhost_8080/Project_Diktiakos/start_themata.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/start_themata?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/start_themata/wsdl/localhost_8080/Project_Diktiakos/start_themata.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/start_themata"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/start_themata">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-start_themata" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/start_themata"/>
+    </target>
+    <target name="wsimport-client-final_apotelesmata_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/final_apotelesmata_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/final_apotelesmata_ws" destdir="${build.generated.dir}/jax-wsCache/final_apotelesmata_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/final_apotelesmata_ws/wsdl/localhost_8080/Project_Diktiakos/final_apotelesmata_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/final_apotelesmata_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/final_apotelesmata_ws/wsdl/localhost_8080/Project_Diktiakos/final_apotelesmata_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/final_apotelesmata_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/final_apotelesmata_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-final_apotelesmata_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/final_apotelesmata_ws"/>
+    </target>
+    <target name="wsimport-client-pistopoisi_xristi_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/pistopoisi_xristi_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/pistopoisi_xristi_ws" destdir="${build.generated.dir}/jax-wsCache/pistopoisi_xristi_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/pistopoisi_xristi_ws/wsdl/localhost_8080/Project_Diktiakos/pistopoisi_xristi_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/pistopoisi_xristi_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/pistopoisi_xristi_ws/wsdl/localhost_8080/Project_Diktiakos/pistopoisi_xristi_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/pistopoisi_xristi_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/pistopoisi_xristi_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-pistopoisi_xristi_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/pistopoisi_xristi_ws"/>
+    </target>
+    <target name="wsimport-client-teliki_epistrofi" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/teliki_epistrofi"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/teliki_epistrofi" destdir="${build.generated.dir}/jax-wsCache/teliki_epistrofi" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/teliki_epistrofi/wsdl/localhost_8080/Project_Diktiakos/teliki_epistrofi.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/teliki_epistrofi?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/teliki_epistrofi/wsdl/localhost_8080/Project_Diktiakos/teliki_epistrofi.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/teliki_epistrofi"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/teliki_epistrofi">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-teliki_epistrofi" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/teliki_epistrofi"/>
+    </target>
+    <target name="wsimport-client-next_themta_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/next_themta_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/next_themta_ws" destdir="${build.generated.dir}/jax-wsCache/next_themta_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/next_themta_ws/wsdl/localhost_8080/Project_Diktiakos/next_themta_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/next_themta_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/next_themta_ws/wsdl/localhost_8080/Project_Diktiakos/next_themta_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/next_themta_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/next_themta_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-next_themta_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/next_themta_ws"/>
+    </target>
+    <target name="wsimport-client-egkrisi_diaxiristi_kentrou_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws" destdir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/egkrisi_diaxiristi_kentrou_ws/wsdl/localhost_8080/Project_Diktiakos/egkrisi_diaxiristi_kentrou_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/egkrisi_diaxiristi_kentrou_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/egkrisi_diaxiristi_kentrou_ws/wsdl/localhost_8080/Project_Diktiakos/egkrisi_diaxiristi_kentrou_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-egkrisi_diaxiristi_kentrou_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/egkrisi_diaxiristi_kentrou_ws"/>
+    </target>
+    <target name="wsimport-client-login_exetastikou_ketrou_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/login_exetastikou_ketrou_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/login_exetastikou_ketrou_ws" destdir="${build.generated.dir}/jax-wsCache/login_exetastikou_ketrou_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/login_exetastikou_ketrou_ws/wsdl/localhost_8080/Project_Diktiakos/login_exetastikou_ketrou_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/login_exetastikou_ketrou_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/login_exetastikou_ketrou_ws/wsdl/localhost_8080/Project_Diktiakos/login_exetastikou_ketrou_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/login_exetastikou_ketrou_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/login_exetastikou_ketrou_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-login_exetastikou_ketrou_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/login_exetastikou_ketrou_ws"/>
+    </target>
+    <target name="wsimport-client-egkrisi_exetastikou_kentrou" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/egkrisi_exetastikou_kentrou"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/egkrisi_exetastikou_kentrou" destdir="${build.generated.dir}/jax-wsCache/egkrisi_exetastikou_kentrou" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/egkrisi_exetastikou_kentrou/wsdl/localhost_8080/Project_Diktiakos/egkrisi_exetastikou_kentrou.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/egkrisi_exetastikou_kentrou?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/egkrisi_exetastikou_kentrou/wsdl/localhost_8080/Project_Diktiakos/egkrisi_exetastikou_kentrou.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/egkrisi_exetastikou_kentrou"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/egkrisi_exetastikou_kentrou">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-egkrisi_exetastikou_kentrou" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/egkrisi_exetastikou_kentrou"/>
+    </target>
+    <target name="wsimport-client-ekrisi_ipospidiou_app_ws" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws" destdir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/ekrisi_ipospidiou_app_ws/wsdl/localhost_8080/Project_Diktiakos/ekrisi_ipospidiou_app_ws.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/ekrisi_ipospidiou_app_ws?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/ekrisi_ipospidiou_app_ws/wsdl/localhost_8080/Project_Diktiakos/ekrisi_ipospidiou_app_ws.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ekrisi_ipospidiou_app_ws" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/ekrisi_ipospidiou_app_ws"/>
+    </target>
+    <target name="wsimport-client-egkrisi_ipospifiou_app" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app" destdir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/egkrisi_ipospifiou_app/wsdl/localhost_8080/Project_Diktiakos/egkrisi_ipospifiou_app.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Project_Diktiakos/egkrisi_ipospifiou_app?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/egkrisi_ipospifiou_app/wsdl/localhost_8080/Project_Diktiakos/egkrisi_ipospifiou_app.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-egkrisi_ipospifiou_app" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/loginwebservices"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/egkrisi_ipospifiou_app"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-login, wsimport-client-ipopsifiows, wsimport-client-exetastikokedrows, wsimport-client-isagogi_stixio_ws, wsimport-client-pistopoisi_exestikou_kentrou_ws, wsimport-client-themata_wc, wsimport-client-up_ipopsifios_ws, wsimport-client-diagrafi_ipopsifiou_ws, wsimport-client-diagrafi_thematon_ws, wsimport-client-anafora_exetastikou_kentro, wsimport-client-anafora_kodikos_exetasis_ws, wsimport-client-anafora_kodikos_thematon_ws, wsimport-client-egkrisi_ipopsifiou_wc, wsimport-client-ipopsifios_login_ws, wsimport-client-start_themata, wsimport-client-final_apotelesmata_ws, wsimport-client-pistopoisi_xristi_ws, wsimport-client-teliki_epistrofi, wsimport-client-next_themta_ws, wsimport-client-egkrisi_diaxiristi_kentrou_ws, wsimport-client-login_exetastikou_ketrou_ws, wsimport-client-egkrisi_exetastikou_kentrou, wsimport-client-ekrisi_ipospidiou_app_ws, wsimport-client-egkrisi_ipospifiou_app"/>
+</project>
